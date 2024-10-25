@@ -1,22 +1,17 @@
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Clean Buildozer Environment
-        run: buildozer android clean  # Clean the build environment
-
       - name: Build APK
         uses: digreatbrian/buildozer-action@v2
         with:
           buildozer-cmd: buildozer -v android debug
-          work-dir: .  # directory where your main.py file is located
+          work-dir: . # directory where your main.py file rests
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
