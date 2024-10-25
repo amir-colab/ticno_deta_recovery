@@ -4,7 +4,7 @@
 title = Ticno Data Recovery
 
 # (str) Package name
-package.name = ticno_data_recovery
+package.name = TicnoDetaRecovery
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.ticno_developer 
