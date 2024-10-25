@@ -4,7 +4,7 @@
 title = Ticno Data Recovery
 
 # (str) Package name
-package.name = TicnoDetaRecovery
+package.name = ticnodetarecovery
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.ticno_developer 
@@ -35,7 +35,7 @@ version = 1.0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy==2.2.0,kivymd,pytsk3,android,six
+requirements = python3,kivy==2.2.0,kivymd,pytsk3,android,six,pillow 
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -99,7 +99,7 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, A
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 33
+android.api = 32
 
 # (int) Minimum API your APK / AAB will support.
 android.minapi = 26
