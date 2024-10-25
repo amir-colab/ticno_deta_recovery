@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Clean Buildozer Environment
+        run: buildozer android clean  # Clean the build environment
+
       - name: Build APK
         uses: digreatbrian/buildozer-action@v2
         with:
