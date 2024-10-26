@@ -35,7 +35,7 @@ version = 1.0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy,kivymd,pytsk3,android,six,pillow
+requirements = python3,kivy==2.0.0,kivymd,pytsk3,android,six,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -65,7 +65,7 @@ author = © Copyright Info
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 2.3.0
+osx.kivy_version = 2.0.0
 
 #
 # Android specific
@@ -108,7 +108,7 @@ android.minapi = 26
 android.sdk = 32
 
 # (str) Android NDK version to use
-android.ndk = 27c
+android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 android.ndk_api = 26
