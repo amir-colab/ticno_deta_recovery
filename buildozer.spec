@@ -4,7 +4,7 @@
 title = Ticno Data Recovery
 
 # (str) Package name
-package.name = ticnodetarecovery
+package.name = ticno_deta_recovery
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.ticno_developer 
@@ -28,7 +28,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 1.0.1
+version = 1.0
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
