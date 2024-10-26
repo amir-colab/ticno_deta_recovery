@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build APK
-        uses: digreatbrian/buildozer-action@v4
+        uses: digreatbrian/buildozer-action@v2
         with:
           buildozer-cmd: buildozer -v android debug
           work-dir: . # directory where your main.py file rests
