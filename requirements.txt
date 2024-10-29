@@ -1,7 +1,0 @@
-python3
-kivy==2.3.0
-kivymd==2.0.1
-pytsk3==20231007
-libstk3==4.12.1
-six
-
