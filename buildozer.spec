@@ -42,10 +42,10 @@ requirements = python3,kivy,kivymd,pytsk3,android,six,pillow
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = assets/presplash.png
+presplash.filename = %(source.dir)s/assets/presplash.png
 
 # (str) Icon of the application
-icon.filename = assets/icon.png
+icon.filename = %(source.dir)s/data/icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -93,7 +93,7 @@ android.presplash_color = #FFFFFF
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
-android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, ACCESS_NETWORK_STATE
+android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE,CHANGE_WIFI_MULTICAST_STATE, ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -102,16 +102,16 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, A
 android.api = 32
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 26
+#android.minapi = 21
 
 # (int) Android SDK version to use
 android.sdk = 32
 
 # (str) Android NDK version to use
-android.ndk = 25b
+#android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-android.ndk_api = 26
+#android.ndk_api = 26
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
@@ -214,3 +214,7 @@ android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-7271098
 
 # (str) AdMob Banner Ad Unit ID
 android.admob.banner_ad_unit_id = ca-app-pub-7271098178305563/4305167043
+
+# (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86
+android.arch = armeabi-v7a
+
