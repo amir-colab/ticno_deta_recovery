@@ -35,7 +35,7 @@ version = 1.0
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy,kivymd,pytsk3,android,six,pillow
+requirements = python3,kivy==2.3.0,kivymd=2.0.1,pytsk3==20231007,android,six,pillow,libtsk==4.12.1
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
