@@ -7,7 +7,7 @@ title = Ticno Data Recovery
 package.name = ticno_deta_recovery
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.ticno_developer 
+package.domain = org.ticnodeveloper 
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -35,7 +35,7 @@ version = 1.0
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy==2.3.0,kivymd=2.0.1,pytsk3==20231007,android,six,pillow,libtsk==4.12.1
+requirements = python3,kivy,kivymd,pytsk3==20231007,android,six,pillow,libtsk==4.12.1
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -45,7 +45,7 @@ requirements = python3,kivy==2.3.0,kivymd=2.0.1,pytsk3==20231007,android,six,pil
 presplash.filename = %(source.dir)s/assets/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/assets/icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
