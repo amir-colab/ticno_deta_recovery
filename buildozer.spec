@@ -35,17 +35,17 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy,kivymd,pytsk3==20231007,android,six,pillow,
+requirements = python3,kivy==2.3.0,kivymd,pytsk3,android,six,kivy-garden,pillow,
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = /assets/presplash.png
+presplash.filename = %(source.dir)s/assets/presplash.png
 
 # (str) Icon of the application
-icon.filename = /assets/icon.png
+icon.filename = %(source.dir)s/assets/icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -65,7 +65,7 @@ author = © Copyright Info
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 2.0.0
+osx.kivy_version = 2.3.0
 
 #
 # Android specific
@@ -99,19 +99,19 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE,CH
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 32
+android.api = 30
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
 
 # (int) Android SDK version to use
-android.sdk = 32
+android.sdk = 30
 
 # (str) Android NDK version to use
 #android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 26
+#android.ndk_api = 25
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
@@ -215,6 +215,4 @@ android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-7271098
 # (str) AdMob Banner Ad Unit ID
 android.admob.banner_ad_unit_id = ca-app-pub-7271098178305563/4305167043
 
-# (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86
-android.arch = armeabi-v7a
 
