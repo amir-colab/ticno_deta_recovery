@@ -35,14 +35,14 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy==2.3.0,kivymd,pytsk3,android,six,kivy-garden,pillow,
+requirements = python3,kivy==2.3.0,kivymd,six,kivy-garden,pillow,pytsk3 
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/assets/presplash.png
+#presplash.filename = %(source.dir)s/assets/presplash.png
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/assets/icon.png
@@ -210,9 +210,9 @@ android.enable_androidx = True
 # android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
 
 # (str) AdMob App ID
-android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-7271098178305563~7375522242
+#android.meta_data = com.google.android.gms.ads.APPLICATION_ID=ca-app-pub-7271098178305563~7375522242
 
 # (str) AdMob Banner Ad Unit ID
-android.admob.banner_ad_unit_id = ca-app-pub-7271098178305563/4305167043
+#android.admob.banner_ad_unit_id = ca-app-pub-7271098178305563/4305167043
 
 
