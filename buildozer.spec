@@ -35,7 +35,7 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy==2.3.0,kivymd,six,kivy-garden,pillow,pytsk3 
+requirements = python3,kivy==2.3.0,kivymd,pytsk3,kivy-garden,pillow,six
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -111,7 +111,7 @@ android.sdk = 30
 #android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 25
+#android.ndk_api = 27c
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
