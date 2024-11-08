@@ -99,19 +99,19 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE,CH
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 30
+#android.api = 30
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 21
+#android.minapi = 26
 
 # (int) Android SDK version to use
-android.sdk = 30
+#android.sdk = 30
 
 # (str) Android NDK version to use
-android.ndk = 27c
+#android.ndk = 25b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 27c
+#android.ndk_api = 25b
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 android.private_storage = True
