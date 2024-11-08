@@ -35,14 +35,14 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-requirements = python3,kivy==2.3.0,kivymd,pytsk3,kivy-garden,pillow,six
+requirements = python3,kivy,kivymd,pytsk3,kivy_garden,pillow,six
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/assets/presplash.png
+presplash.filename = %(source.dir)s/assets/presplash.png
 
 # (str) Icon of the application
 icon.filename = %(source.dir)s/assets/icon.png
@@ -102,13 +102,13 @@ android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE,CH
 android.api = 30
 
 # (int) Minimum API your APK / AAB will support.
-#android.minapi = 21
+android.minapi = 21
 
 # (int) Android SDK version to use
 android.sdk = 30
 
 # (str) Android NDK version to use
-#android.ndk = 25b
+android.ndk = 27c
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 27c
