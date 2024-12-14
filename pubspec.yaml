@@ -1,0 +1,25 @@
+name: ticno_deta_recovery
+description: An advanced data recovery app for deleted videos, audios, pictures, and documents.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.14
+  permission_handler: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.2.14
+
+flutter:
+  assets:
+    - assets/icons/recover_icon.png
+    - assets/icons/settings_icon.png
+    - assets/images/splash_background.png
+    - assets/images/app_logo.png
+  uses-material-design: true
