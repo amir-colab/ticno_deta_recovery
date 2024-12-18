@@ -1,17 +1,19 @@
-jobs:
-  build:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
+        uses: actions/checkout@v2
         uses: actions/checkout@v4
 
       - name: Install Flutter
+        uses: subosito/flutter-action@v1
         uses: subosito/flutter-action@v4
 
       - name: Run flutter build
         run: flutter build apk --release
 
       - name: Upload APK
+        uses: actions/upload-artifact@v2
         uses: actions/upload-artifact@v4
         with:
           name: apk
