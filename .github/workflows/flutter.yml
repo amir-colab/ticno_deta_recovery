@@ -1,20 +1,26 @@
 
+name: Flutter Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Install Flutter
-        uses: subosito/flutter-action@v1
-        uses: subosito/flutter-action@v4
+        uses: subosito/flutter-action@v2
 
       - name: Run flutter build
         run: flutter build apk --release
 
       - name: Upload APK
-        uses: actions/upload-artifact@v2
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: apk
           path: build/app/outputs/apk/release/app-release.apk
