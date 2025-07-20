@@ -1,0 +1,17 @@
+name: Extract Zip File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Extract zip file
+        run: |
+          unzip path/to/your/zipfile.zip -d path/to/extract/folder
+          
